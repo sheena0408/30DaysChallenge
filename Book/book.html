@@ -1,0 +1,408 @@
+<!doctype html>
+    <meta charset="UTF-8">
+    <head>
+    	<meta  content="initial-scale=1 width=device-width" name="viewport">
+    	<title>CAD-Michelle Paver</title>
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    	<!--GOOGLE FONT LINKS-->
+    	<link href="https://fonts.googleapis.com/css?family=Bungee|Courgette|Orbitron|Sedgwick+Ave+Display" rel="stylesheet">
+
+    	<style>
+    	body{
+    		background: url("img1.jpg") center/cover fixed;
+    		font-family: 'Courgette';
+    		text-align:center;
+    		font-size:17px;
+    	}
+    	h1{
+    		font-family: 'Orbitron';
+    		font-size: 60px;
+    		text-shadow:5px 3px 10px #000;
+    		color:rgba(0,0,0,0.7);
+    		margin:10px 0;
+    	}
+    	h3{
+    		font-family: 'Sedgwick Ave Display';
+    		color:rgba(0,0,0,0.8);
+    		font-size: 30px;
+    		margin:20px;
+    	}
+    	p{
+    		width:70%;
+    		padding:20px;
+    		margin:20px 30px;
+    	}
+    	header{
+    		background: rgba(255,255,255,0.8);
+    		color:rgba(0,0,0,0.7);
+    	}
+    	.intro{
+    		background: rgba(0,0,0,0.7);
+    		color:rgba(200,200,200,0.8);
+    	}
+    	.intro img{
+    		float:right;
+    		margin:80px 110px 0 0;
+    	}
+    	.bookimg,.auth{
+    		background: url("img2.jpg") center/cover fixed;
+    		padding:20px;
+    		color:#000;	
+    	}
+    	.bookimg p{
+    		margin-left:200px;
+    	}
+    	.bookimg img{
+    		margin:20px 80px 0 0;
+    	}
+    	.bookdesc{
+    		background:linear-gradient(to bottom,rgba(255,255,255,0.5),rgba(0,0,0,0.8));
+    		color:rgba(200,200,200,0.8);
+    		padding-bottom:40px;
+    		box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    	}
+    	.bookdesc h1,.bookdesc h3{
+    		color:rgba(255,255,255,0.8);
+    	}
+    	.bookdesc img{
+    		float:right;
+    		margin:50px 120px 0 0;
+    	}
+    	.sw img{
+    		margin-top:0;
+    	}
+    	.auth p{
+    		display: block;
+    		border:1px solid #000;
+    		margin-left:200px;	
+    		background:rgba(255,255,255,0.8);
+    		box-shadow: 10px 10px 30px rgba(0,0,0,0.8);
+    	}
+    	.other{
+    		background:linear-gradient(to top,rgba(0,0,0,0.5),rgba(255,255,255,0.7));
+    		height:500px;
+    	}
+    	.other ul{
+    		list-style:none;
+    		display: inline;
+    		color:rgba(0,0,0,0.8);
+    		text-align:left;
+    	}
+    	.list1{
+    		float:left;
+    		margin:0 50px 0 250px;
+    	}
+    	.list2{
+    		float:right;
+    		margin:0 250px 0 50px;
+    	}
+    	.links a{
+    		font-family: 'Bungee';
+    		padding:10px;
+    		margin:5px 55px 55px 0;
+   	 	    color:#fff;
+   	 	    text-decoration: none;
+   	 	    font-size:20px;
+   	 	    border-radius: 10px;
+   	 	    box-shadow: 5px 5px 10px #000;
+   	 	    text-shadow:3px 3px 5px #000;
+
+    	}
+    	.links a:hover{
+    		box-shadow: 8px 8px 10px #000;
+    		background: rgba(0,0,128,0.8)
+    	}
+    	div,header,footer{
+    		padding: 5px;
+    	}
+    	footer{
+    		height:50px;
+    		background: #000;	
+    	}
+    	footer h6{
+    		color:#fff;
+    		font-size:20px;
+    	}
+    	.contact{
+    		background: url("img3.jpg") center/cover fixed;
+    	}
+    	.contact p{
+    		margin:0 0 50px 200px;
+    	}
+    	input{
+    		padding:10px;
+    		font-size:20px;
+    		width:400px;
+    		margin-right:50px;
+    		border-radius: 5px;
+    	}
+    	button{
+    		color:#fff;
+    		background:linear-gradient(to bottom,#000,rgba(0,0,128,0.6));
+    		font-size:20px;
+    		padding:10px;
+    		border: 3px solid #000;
+    		border-radius: 5px;
+    	}
+    	button:hover{
+    		box-shadow: 2px 4px 5px #000;
+    		background:linear-gradient(to bottom,#000,rgba(0,0,128,0.7));
+    	}
+    	.review{
+    		background:linear-gradient(to top,rgba(255,255,255,0.7),rgba(0,0,0,0.5));
+    	}
+    	.box h3,.box h6{
+    		font-size:20px;
+    	}
+    	.social-menu{
+    		margin-top:50px;
+    	}
+    	.social-menu ul{
+    		list-style: none;
+    		margin-top:50px;
+    	}
+    	.social-menu li{
+    		display: inline;
+    		padding:10px;
+    		margin:20px;
+    		border:1px solid rgba(255,255,255,0.5);
+    		border-radius:10px;
+    		font-size: 40px;	
+    		background:rgba(0,0,0,0.7);
+    	}
+    	li:hover{
+    		background: rgba(255,255,255,0.7);
+    		color:#000;
+    	}
+    	.fa-facebook{
+
+
+    	}
+    	
+
+        </style>
+  	</head>
+
+  	<body>
+  		<header>
+  		<h1>CHRONICLES OF ANCIENT DARKNESS</h1>
+  		<h3>By Michelle Paver</h3>
+  	    </header>
+
+  		<div class="intro">
+  			<img src="img4.jpg"  alt="books image">
+
+  		<p> Chronicles of Ancient Darkness is a series of six historical fantasy novels by the British author 
+  			Michelle Paver, her first books for children.The books chronicle the adventures of Torak, an adolescent boy, and his friends Renn and Wolf. The main story arc revolves around Torak and his quest to defeat the Soul Eaters, a group of power hungry mages who seek out to destroy all life in the forest. Paver has called it simply "a single story: the tale of Torak's discovery of himself and his world."<br/>
+
+            Since the 30 May 2004 release of the first book in the series, Wolf Brother, the series has gained critical acclaim and commercial success worldwide. Wolf Brother became a national bestseller in the United States, and the rights to the series were bought by 20th Century Fox to be made into major motion pictures. In October 2013, Nick Hirschkorn's production company Feel Films picked up the film rights, with Will Davies attached as screenwriter.<br/>
+
+            The books are set 6000 years ago in prehistoric Europe during the Stone Age. The main character, Torak, alone in the world, soon meets a lone wolf cub, Wolf, with whom he can communicate (having spent around three months in a wolf den as a baby). A girl named Renn, who is part of the Raven Clan, soon befriends them and supports them throughout the series. Torak's quest, along with Renn and Wolf, is to defeat the Soul Eaters, a group of former clan mages who have turned to evil, and who seek to control the forest.The story is told from three different third-person narratives: Torak, Renn and Wolf.<br/>
+
+            For the concluding book Ghost Hunter (2009) she won the Guardian Children's Fiction Prize, a once-in-a-lifetime book award judged by a panel of British children's writers.
+        </p>
+        
+       </div>
+
+       <div class="bookimg">
+
+        <h3>BOOKS IN THE SERIES</h3>
+            <p>(Click on a picture to see description)</p>
+        	<a href="#wb"><img src="img5.jpg" alt="wb book"  ></a>
+        	
+        	<a href="#sww"><img src="img6.jpg" alt="sw book"  ></a>
+        	
+        	<a href="#se"><img src="img7.jpg" alt="se book" ></a>
+        	
+        	<a href="#o"><img src="img8.jpg" alt="o book"  ></a>
+        	
+        	<a href="#ob"><img src="img9.jpg" alt="ob book"  ></a>
+        	
+        	<a href="#g"><img src="img10.jpg" alt="g book"  ></a>
+
+
+        </div>
+
+        <div class="bookdesc" id="wb">
+        	<h1>WOLF BROTHER</h1>
+        	<h3>BOOK 1-2004</h3>
+        	<img src="img5.jpg" alt="" class="descimg">
+        	
+        	<p>Torak is twelve years old when his father is killed by a bear that is possessed by a demon. As he is dying, he tells Torak to swear to find the Mountain of the World Spirit and ask for the Spirit's help in destroying the bear. On his journey he encounters Wolf, a lone wolf cub whose family has been killed by a flash flood. Wolf becomes Torak's guide in finding the World Spirit. Torak and Wolf are captured by the Raven Clan for hunted a deer on their land; they are befriended by Renn, the prickly and outspoken niece of the clan's leader Fin-Kedinn. Torak appears to be the fulfillment of a prophecy about a "listener" who will give his heart's blood to the Mountain of the World Spirit, kill the bear and defy the Soul-Eaters, a group of erstwhile Mages who were once healers but became power-hungry and now use their magic for selfish ends. Torak, Wolf and Renn journey to the Mountain, collecting the three parts of the Nanuak,(the world soul in everything) that Torak needs to offer to the World Spirit. When Torak sets off to the Mountain with only Wolf to fulfill the prophecy, Renn's brother Hord follows Torak. Hord, who makes his dislike of Torak clear when they first meet, believes he must kill Torak and take his blood, as well as the Nanuak, to the Mountain. On the Mountain, as the bear gets closer, Torak and Hord fight. Torak realizes Hord unknowingly helped the Crippled Wanderer, one of the Soul Eaters, and his father's sworn enemy, create the bear. Torak also realizes that the heart's blood in the prophecy means Wolf. Knowing he must sacrifice Wolf for the World Spirit, Torak tells Wolf to run away. Wolf takes the three pieces of Nanuak to the mountain, as Hord and the bear are killed in an avalanche. Wolf leaves to join a pack of wolves and Torak, knowing his pack-brother still lives, returns to the Raven Clan.
+        	</p>
+        	<div class="links">
+        	   <a href="">HARDCOVER</a>
+         	   <a href="">EXCERPTS</a>
+        	   <a href="">BUY BOOK</a>
+        	</div>
+
+        </div>
+        <hr>
+
+        <div class="bookdesc sw" id="sww">
+        	<h1>SPIRIT WALKER</h1>
+        	<h3>BOOK 2-2005</h3>
+        	<img src="img6.jpg" alt="" class="descimg">
+        	
+        	<p>The clans fall prey to a stalking sickness. Torak embarks on a search for a cure, which takes him to mysterious islands where the Seal Clan live. The Seal Mage, Tenris, promises to help him make a remedy. Torak meets a Seal Clan boy named Bale, who later becomes his friend. While on the island, Torak discovers that he is a spirit walker: his souls can move into other creatures, allowing him to feel and think as they do, but still remain himself. Tenris is not as helpful as he originally seemed: he is one of the Soul Eaters and plans to increase his powers by eating Torak's heart and becoming a spirit walker. Torak finds out that Tenris is actually his uncle, and the man known as the Crippled Wanderer who created the demon bear that killed Torak's father. As Tenris is about to kill Torak, Renn wounds Tenris, allowing Torak to escape. Tenris is killed by an orca, in revenge for Tenris killing its offspring for its teeth. Eventually, they discover the reason for the mysterious sickness is that Tenris sent enslaved children known as tokoroths to poison juniper berries.
+        	</p>
+        	<div class="links">
+        	   <a href="">HARDCOVER</a>
+         	   <a href="">EXCERPTS</a>
+        	   <a href="">BUY BOOK</a>
+        	</div>
+
+        </div>
+        <hr>
+
+        <div class="bookdesc" id="se">
+        	<h1>SOUL EATER</h1>
+        	<h3>BOOK 3-2006</h3>
+        	<img src="img7.jpg" alt="" class="   descimg">
+        	
+        	<p>In their desire to subjugate all the clans, the Soul Eaters have captured a range of hunting animals—including Wolf—which they will sacrifice to unleash demons. They plan to control the demons with a fire opal. Torak and Renn make a dangerous journey across the frozen wilderness into the Far North to rescue Wolf; their friendship is tested to the limits and they become separated. They escape, but not before the Soul Eaters brand Torak against his will as one of them. Torak manages to deceive them into thinking Renn is the spirit walker who caused the death of Tenris. Renn, meanwhile, has possession of the fire-opal and is about to sacrifice herself to destroy it. When three of the Soul Eaters try to kill Torak, Renn and Wolf take back the fire opal, Torak spirit walks into a Polar Bear to save his friends. <br/>Nef, one of the Soul Eaters, saves Renn and sacrifices herself instead, using her life to destroy the power of the fire opal and repay the Torak's father for saving her life before he was killed. Fin-Kedinn and some of the Raven Clan make the journey North and save Renn and Torak, and bring them back home. Torak is then told that the fire opal that was destroyed was one of three parts. The original fire opal was broken by Torak's father to start the great fire that scattered the Soul Eaters. Another of the fragments was used by Tenris to create the demon bear and the Tokoroths, and is believed to have been lost when he was killed. The whereabouts of the last fragment are unknown.
+        	</p>
+        	<div class="links">
+        	   <a href="">HARDCOVER</a>
+         	   <a href="">EXCERPTS</a>
+        	   <a href="">BUY BOOK</a>
+        	</div>
+
+        </div>
+        <hr>
+
+        <div class="bookdesc" id="o">
+        	<h1>OUTCAST</h1>
+        	<h3>BOOK 4-2007</h3>
+        	<img src="img8.jpg" alt="" class="descimg">
+        	<p>After the secret of his Soul Eater mark is discovered, Torak is cast out by the clans, though Renn fiercely and furiously does all she can to stop it. Bale, who has traveled to the forests from his island in the sea, teams up with Renn to go after him: Renn helps him and then both Renn and Bale follow him as Torak wanders, suffering from insanity. <br/>Renn and Bale fight along the way, as Bale treats Renn condescendingly because of his beliefs about women, and he is confused about how strong and insistent Renn is. Renn sends help to Torak in the form of two ravens, which Torak has named Rip and Rek. While Torak is recovering his reason, Seshru the Viper Mage, a Soul Eater, uses her powers to draw him to her so she can control him. Renn and Bale together defy clan law by trying to help Torak. Seshru is revealed to be Renn's mother. Torak shows the clans that destroying him will not help them in their struggle against the Soul Eaters, and they accept him back. Fin-Kedinn makes Torak his foster son. <br/>Torak learns that his father hid the last fragment of the fire opal inside the knife he gave Torak before his death, and it is part of the reason why Seshru was hunting him. Seshru then steps forward to try and claim the fragment. Renn is about to kill Seshru, but Bale steals her bow and kills Seshru himself, because Renn would be tainted if she killed her own mother. In Seshru's final moments, Torak uses her life to destroy the fragment of the fire opal. Fin-Kedinn changes Torak's outcast tattoo, making him part of all types of clans. Bale also tells Torak and Fin-Kedinn that the fragment of the fire opal thought lost when Tenris was killed may not have been with him when he died. The three realize this was why the two surviving Soul Eaters were not hunting Torak as well.
+        	</p>
+        	
+        	<div class="links">
+        	   <a href="">HARDCOVER</a>
+         	   <a href="">EXCERPTS</a>
+        	   <a href="">BUY BOOK</a>
+        	</div>
+
+        </div>
+        <hr>
+
+        <div class="bookdesc" id="ob">
+        	<h1>OATH BREAKER</h1>
+        	<h3>BOOK 5-2008</h3>
+        	<img src="img9.jpg" alt="" class="   descimg">
+        	
+        	<p>While guarding the Seal Islands against the Soul Eaters for fear of them trying to take the last part of the Fire Opal, Bale asks Torak for his permission to take Renn for his mate, which makes Torak angry. Later, Bale is murdered by Thiazzi the Oak Mage, who then takes the last fragment of the fire opal. <br/>Torak vows to avenge Bale's death, and with Renn, Wolf and Fin-Kedinn follows Thiazzi into the Deep Forest where the Forest Horse and Auroch (sic) Clans are at war. As Torak, Renn and Fin-Kedinn are about to enter the Deep Forest, Fin-Kedinn is injured and turns back. Torak and Renn discover that Thiazzi is controlling the Deep Forest clans by impersonating their mages. A forest fire takes hold and Torak and Renn are separated. Torak finds his way to Thiazzi, while Renn is taken by the Deep Forest tribe. She defies the tribe and their belief that women can't be mages, by insisting that she is a mage and showing them her bond with Wolf and the ravens, Rip and Rek. She is then kidnapped by Thiazzi and imprisoned in a giant, hollow tree, where she cuts herself free in time to avoid choking on smoke. <br/>She climbs to the top, from where she sees Torak fighting Thiazzi. She throws a burning brand of wood to Torak, and a burning ember sets fire to Thiazzi's hair. He falls to his death as Eostra's eagle owl snatches the fire opal from the Oak Mage. Many months later, Wolf and his mate Darkfur show Torak and Renn their new cubs. Although Torak is happy for Wolf, the fight is not over, as Eostra, the last and most dangerous of the Soul Eaters, now has the fire opal.
+        	</p>
+        	<div class="links">
+        	   <a href="">HARDCOVER</a>
+         	   <a href="">EXCERPTS</a>
+        	   <a href="">BUY BOOK</a>
+        	</div>
+
+        </div>
+        <hr>
+
+
+        <div class="bookdesc" id="g"> 
+        	<h1>GHOST HUNTER</h1>
+        	<h3>BOOK 6-2009</h3>
+        	<img src="img10.jpg" alt="" class="descimg">
+        	
+        	<p>The Eagle Owl Mage, Eostra, sends a shadow sickness among the clans, to spread fear among them. Torak then sees his father's soul, seemingly in pain. Torak sets out alone to try and confront his destiny. Renn follows Torak, catching up with him. Wolf's family is then attacked by Eostra's owl, sending Darkfur to her death, killing one of the cubs, and using the other to lure Wolf away for a time. Renn and Torak venture to the Mountain of Ghosts with a grieving Wolf to stop Eostra from killing all life in the forest.<br/> When Renn injures her leg because of Eostra's demon dogs, Torak leaves without her: when she has recovered, she goes after him, furious. Torak is captured by a strange boy named Dark who has been cast out by his clan. After much pleading, Dark releases Torak and ventures with him to the Mountain of Ghosts. Torak and Wolf enter the Mountain, but Dark is trapped outside. Dark then meets Renn, who after trying to follow Torak had found Darkfur. Wolf's mate had nearly perished after going through miles in the snow with an infected wound to rescue her last cub. Torak and Wolf confront Eostra, who is summoning the ghosts of the dead Soul Eaters, including Torak's father. Renn and Dark also attempt to intervene, but Eostra appears unstoppable. <br/>Then the Walker, who appeared insane when Torak and Renn previously met him in Wolf Brother, arrives and reveals himself to be Narrander, the seventh Soul Eater thought to have been killed in the great fire years before. Torak destroys the Fire Opal, breaking Eostra's hold over the dead Soul Eaters. Eostra then tries to use Torak's hair to claim his power. Narrander summons the Hidden People to cause a rockfall. Eostra falls into a crevice, pulling Torak with her. Shortly afterwards, Wolf finds Torak's body and forces Torak's spirit to re-enter it. Renn, Dark, Rip and Rek reunite with Torak and Wolf. The last of Wolf's cubs, Pebble, who has survived his ordeal, is then discovered by his parents. Three months later, Dark is named the new Raven Mage, and, after saying goodbye to Fin-Kedinn and promising to return one day, Torak and Renn set off with Wolf, Darkfur, Pebble, and the ravens Rip and Rek, to continue to explore the forest.
+        	</p>
+        	<div class="links">
+        	   <a href="">HARDCOVER</a>
+         	   <a href="">EXCERPTS</a>
+        	   <a href="">BUY BOOK</a>
+        	</div>
+
+        </div>
+        <hr>
+
+        <div class="auth">
+        	<h1>ABOUT THE AUTHOR</h1>
+        	<img src="img11.jpg" alt="author pic"  >
+
+        	<p>Michelle Paver (born 1960) is a British novelist and children's writer, known for the fantasy series Chronicles of Ancient Darkness, set in pre-agricultural Stone Age Europe.For the concluding book Ghost Hunter (2009) she won the Guardian Children's Fiction Prize, a book award judged by a panel of British children's writers.<br/>Michelle Paver was born in Nyasaland (now Malawi) in central Africa. Her mother was Belgian (Flemish) and her South African father ran a newspaper, the Nyasaland Times. Her family settled in Wimbledon, England when she was three. She was educated at The Study and Wimbledon High School. After reading biochemistry at Lady Margaret Hall, University of Oxford, where she attained a first-class degree, she became a partner in a City of London law firm.
+        		<br/>
+            Her father's death in 1996 prompted her to take a one-year sabbatical, during which she travelled around France and America and wrote her first book, Without Charity. She resigned from legal practice soon after her return, to concentrate on writing. Her 2010 ghost novel Dark Matter was nominated for a Shirley Jackson Award for best novel.</p>  
+        </div>
+
+        <div class="other">
+        	<h1>OTHER BOOKS BY THE AUTHOR</h1>
+        	<div class="list1">
+        	<h3>PUBLICATIONS</h3>
+        	<ul>
+        		<li>Without Charity (2000)</li>
+        		<li>A Place in the Hills (2001)</li>
+        		<li>The Shadow Catcher (2002)</li>
+        		<li>Fever Hill (2004)</li>
+        		<li>The Serpent's Tooth (2005)</li>
+        		<li>Dark Matter (2010)</li>
+        		<li>Thin Air (2016)</li>
+        	</ul>
+            </div>
+            <div class="list2">
+
+        	<h3>GODS AND WARRIORS SERIES</h3>
+        	<ul>
+        		<li>The Outsiders (2013)</li>
+        		<li>The Burning Shadow (August 2013)</li>
+        		<li>Eye of the Falcon (August 2014)</li>
+        		<li>The Crocodile Tomb (August 2015)</li>
+        		<li>Warrior Bronze (August 2016)</li>
+        	</ul>
+            </div>
+        </div>
+
+        <div class="review">
+        	<h1>REVIEWS</h1>
+        	<div class="box">
+        		<h3>The kind of story you dream of reading and all too rarely find...’</h3>
+        		<h6>THE TIMES</h6>
+        	</div>
+        	<div class="box">
+        		<h3>“An enchanting story.”</h3>
+        		<h6>THE MAIL ON SUNDAY</h6>
+        	</div>
+        	<div class="box">
+        		<h3>"Full of action..."</h3>
+        		<h6>THE SUNDAY TIMES</h6>
+        	</div>
+        </div>
+
+        <div class="contact">
+        	<h1>GET IN TOUCH WITH THE AUTHOR</h1>
+        	<p>Be the first to know about Michelle’s new books & receive exclusive special offers for her most valued readers! Your email address will not be shared with third parties, and you can unsubscribe at any time.</p>
+        	<form>
+        		<input type="email" required placeholder="Your Email">
+        		<button type="submit">SUBSCRIBE</button>
+        	</form>
+
+        
+
+        <div class="social-menu">
+        	<h1>FOLLOW US ON</h1>
+        	<ul>
+        		<li><a href=""><span class="fa fa-facebook"></span></a></li>
+        		<li><a href=""><span class="fa fa-twitter"></span></a></li>
+        		<li><a href=""><span class="fa fa-instagram"></span></a></li>
+        	</ul>
+        </div>
+
+        </div>
+
+
+        <footer>
+        	<h6>SOURCES:Wikipedia,www.michellepaver.com|Images from various sources</h6>
+        </footer>
+
+
+
+  	</body>
+
+
+</html>

@@ -1,0 +1,262 @@
+<!--TOURIST ATTRACTION-->
+
+<!DOCTYPE html>
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="initial-scale=1 width=device-width">
+
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+ 	<style>
+ 	  *{
+ 		margin:0;
+      }
+      
+ 	  .nav-list{
+        list-style: none;
+        background:#000;
+ 	  }
+ 	  .nav-item{
+ 	  	display:inline-flex;
+ 	  }
+ 	  .nav-item a{
+        text-decoration: none;
+        padding:20px;
+ 	  	margin:10px;
+ 	  	border-bottom:2px solid transparent;
+ 	  	color:#fff;
+ 	  }
+ 	  .nav-item a:hover{
+        border-bottom:2px solid #fff;
+ 	  }
+ 	  .sticky{
+ 	  	position: fixed;
+ 	  	top:0;
+ 	  	width:100%;
+ 	  	z-index:1;
+ 	  } 
+ 	  .sticky + .cont{
+ 	  	padding-top:60px;
+ 	  }
+ 	  #home{
+ 	  	background:url("img1.jpg") center/cover fixed;
+ 	  	height:85vh;
+ 	  	border:10px ridge rgba(0,0,0,0.6);
+ 	  }
+ 	  .left{
+        box-shadow: 5px 0 10px #000;
+        height:100vh;
+        width:20vw;
+        padding:10px 0;
+        background: rgba(255,255,255,0.9);
+ 	  }
+ 	  .left h1{
+ 	  	text-align:right;
+        position: relative;
+        top:50%;
+        right:5%;
+ 	  }
+ 	  .right{
+ 	  	height:100vh;
+        width:70vw;
+        float:right;
+        position: relative;
+        right:5%;
+        top:50px;
+        color:#fff;
+        overflow:auto;
+        /*not working----z-index:-1;  */
+ 	  }
+ 	  body{
+ 	  	background: url("img2.jpg") center/cover fixed;
+ 	  }
+ 	  #pic{
+ 	  	background:#fff;
+ 	  	text-align:center;
+ 	  	padding:50px 0 90px 0;
+ 	  }
+ 	  #pic h1{
+ 	  	margin:30px;
+ 	  }
+ 	  #pic a{
+ 	  	padding:20px;
+ 	  	border:2px solid #000;
+ 	  	text-decoration: none;
+ 	  	position: relative;
+ 	  	color:#000;
+ 	  	top:30px;
+ 	  	z-index:0;
+ 	  }
+ 	  #pic a:hover{
+ 	  	background: #000;
+ 	  	color:#fff;
+ 	  	border:2px solid transparent;
+ 	  }
+ 	  .nrow{
+ 	  	display: inline-flex;
+ 	  	flex-wrap: wrap;
+ 	  }
+ 	  .nrow img{
+ 	  	width:200px;
+ 	  	height:180px;
+ 	  	margin:5px;
+ 	  	border:5px ridge transparent;
+ 	  }
+ 	   #pic img:hover{
+ 	  	border:5px ridge rgba(0,0,0,0.5);
+ 	  	cursor: pointer;
+ 	  }
+ 	  #htr{
+ 	  	background: linear-gradient(to bottom,rgba(255,255,255,0.7),rgba(0,0,0,0.8));
+ 	  	text-align: center;
+ 	  }
+ 	  #htr .right h4{
+ 	  	font-size: 30px;
+ 	  	color:#000;
+ 	  	text-align: center;
+ 	  }
+ 	  #htr p{
+ 	  	background: rgba(0,0,0,0.8);
+ 	  	width:50%;
+ 	  	padding:10px;
+ 	  	margin:10px;
+ 	  	position: relative;
+ 	  	left:20%;
+ 	  }
+ 	  #map{
+ 	  	width:300px;
+ 	  	height:300px;
+ 	  }
+ 	  .green{
+ 	  	color:#00f;
+ 	  	font-weight: bold;
+ 	  	display: block;
+ 	  	margin:5px 0 5px 0;
+ 	  }
+ 	  footer{
+ 	  	background: #000;
+ 	  	margin:0;
+ 	  	color:#fff;
+ 	  	text-align: center;
+ 	  }
+
+ 	  @media (max-width:670px){
+ 	  	body{
+ 	  		text-align: center;
+ 	  	}
+ 	  }
+    </style>
+ </head>
+ <body>
+ 	<div class="container">
+    <!--homepage-->
+ 	<section id="home">
+ 		<h1 class="cent">TAJ MAHAL</h1>
+ 	</section>
+
+ 	<header id="navbar">
+ 		<nav class="nav-bar" >
+ 			<ul class="nav-list">
+ 				<li class="nav-item"><a href="#home">HOME</a></li>
+ 				<li class="nav-item"><a href="#hist">HISTORY</a></li>
+ 				<li class="nav-item"><a href="#pic">GALLERY</a></li>
+ 				<li class="nav-item"><a href="#htr">HOW TO REACH?</a></li>
+ 			</ul>
+ 		</nav>
+ 	</header>
+ 	<div class="cont">
+ 	<section id="hist">
+ 		<article class="right">
+ 			<p>The Taj Mahal of Agra is one of the Seven Wonders of the World, for reasons more than just looking magnificent. It's the history of Taj Mahal that adds a soul to its magnificence: a soul that is filled with love, loss, remorse, and love again. Because if it was not for love, the world would have been robbed of a fine example upon which people base their relationships. An example of how deeply a man loved his wife, that even after she remained but a memory, he made sure that this memory would never fade away. This man was the Mughal Emperor Shah Jahan, who was head-over-heels in love with Mumtaz Mahal, his dear wife. She was a Muslim Persian princess (her name Arjumand Banu Begum before marriage) and he was the son of the Mughal Emperor Jehangir and grandson of Akbar the Great. It was at the age of 14 that he met Mumtaz and fell in love with her. Five years later in the year 1612, they got married.<br/><br/>
+
+Mumtaz Mahal, an inseparable companion of Shah Jahan, died in 1631, while giving birth to their 14th child. It was in the memory of his beloved wife that Shah Jahan built a magnificent monument as a tribute to her, which we today know as the "Taj Mahal". The construction of Taj Mahal started in the year 1631. Masons, stonecutters, inlayers, carvers, painters, calligraphers, dome-builders and other artisans were requisitioned from the whole of the empire and also from Central Asia and Iran, and it took approximately 22 years to build what we see today. An epitome of love, it made use of the services of 22,000 laborers and 1,000 elephants. The monument was built entirely out of white marble, which was brought in from all over India and central Asia. After an expenditure of approximately 32 million rupees, Taj Mahal was finally completed in the year 1653.<br/><br/>
+
+It was soon after the completion of Taj Mahal that Shah Jahan was deposed by his own son Aurangzeb and was put under house arrest at nearby Agra Fort. Shah Jahan, himself also, lies entombed in this mausoleum along with his wife. Moving further down the history, it was at the end of the 19th century that British Viceroy Lord Curzon ordered a sweeping restoration project, which was completed in 1908, as a measure to restore what was lost during the Indian rebellion of 1857: Taj being blemished by British soldiers and government officials who also deprived the monument of its immaculate beauty by chiseling out precious stones and lapis lazuli from its walls. Also, the British style lawns that we see today adding on to the beauty of Taj were remodeled around the same time. Despite prevailing controversies, past and present threats from Indo-Pak war and environmental pollution, this epitome of love continuous to shine and attract people from all over the world.</p>
+ 		</article>
+
+ 		<article class="left">
+ 			<h1>HISTORY</h1>
+ 		</article>
+ 	</section>
+
+ 	<!--picpage-->
+ 	<section id="pic"> 
+ 		  <h1>GALLERY</h1>
+       	  <div class="nrow">
+       	  		<img src="img3.jpg" class="img-responsive img-fluid">
+       	  		<img src="img4.jpg" class="img-responsive img-fluid">
+       	  		<img src="img5.jpg" class="img-responsive img-fluid">
+       	  		<img src="img6.jpg" class="img-responsive img-fluid">
+       	  		<img src="img7.jpg">
+       	  		<img src="img8.jpg">
+       	  		<img src="img9.jpg">
+       	  		<img src="img10.jpg">
+       	  		<img src="img5.jpg" class="img-responsive img-fluid">
+       	  		<img src="img6.jpg" class="img-responsive img-fluid">
+       	  		<img src="img7.jpg">
+       	  		<img src="img8.jpg">
+       	  		<img src="img9.jpg">
+       	  		<img src="img10.jpg">
+       	  		<img src="img3.jpg" class="img-responsive img-fluid">
+       	  		<img src="img4.jpg" class="img-responsive img-fluid">
+       	  		<img src="img3.jpg" class="img-responsive img-fluid">
+       	  		<img src="img4.jpg" class="img-responsive img-fluid">
+       	  		
+       	  </div>
+          <a href="">More Photos</a>
+ 	</section>
+
+ 	<!--dest or mappage-->
+ 	<section id="htr">
+ 		<article class="right">
+ 			<h4>Get in Touch to book a TRIP!</h4>
+ 			<p><span class="green">ADDRESS:</span>3999 Maple Route, 
+              Wonderland, ABS
+              <br/><span class="green">PHONE NO.:</span>0-123-234-4567
+              <br/><span class="green">E-Mail:</span>abc@mail.com
+              <br/><span class="green">Timings</span>Lunch: 11am - 2pm 
+              <br/>Dinner: M-Th 5pm - 11pm, Fri-Sat:5pm - 1am</p>
+
+ 			<!---MAKE A MAP-->
+ 			<div id="map">
+ 			my map will go here
+ 		    </div>
+       </article>
+
+ 		<article class="left">
+ 			<h1>How To Reach ?</h1>
+ 		</article>
+ 	</section>
+    
+    <footer>
+    	<h3>Developed By Sheena Mattu</h3>
+    </footer>
+    </div>
+</div>
+
+    <script>
+    	window.onscroll = function(){myFunction()};
+    	var navbar= document.getElementById("navbar");
+    	var sticky = navbar.offsetTop;
+
+    	function myFunction(){
+    		if(window.pageYOffset >= sticky){
+    			navbar.classList.add("sticky");
+    		}else {
+    			navbar.classList.remove("sticky");
+    		}
+    	}
+
+    	function myMap() {
+        var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.12),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+    </script>
+ </body>
+</html>

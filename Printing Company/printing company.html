@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width initial-scale=1.0">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><!--for glyphicon-->
+
+
+    	<style>
+    	    *{
+    		    margin:0 auto;
+    		    padding: 0;
+        	}
+        	body{
+        		 text-align: center;
+                 overflow-x: hidden;
+        	}
+    	    main{
+    	    	background-color: rgba(0,0,0,0.2);
+    	    	margin: 0;
+    	    }
+    	    header,.srow{
+    	    	background:url("img1.jpg") center/cover fixed;
+    	    	padding: 10px;
+    	    }
+    	    a{
+    	    	color:#000;
+    	    }
+    	    .navbar{
+    	    	width:100%;
+    	    	margin:0;
+    	    	padding:5px;
+    	    }
+    	    .name{
+    	    	display: inline-flex;
+    	    }
+    	    .name h3{
+    	    	width:100%;
+    	    }
+    	    .navbar img{
+    	    	width:10%;
+    	    	height:50%;
+    	    }
+    	    .navlist{
+    	    	position: relative;
+    	    	right:0;
+    	    	text-align: left;
+    	    }
+    	    .navlist li{
+    	    	display: inline-flex;
+    	    	padding:8px;
+    	    	margin:8px;
+    	    	width:210px;
+                background: rgba(200,100,255,0.3);
+    	    }
+    	    .navlist li a{
+    	    	text-decoration: none;
+    	    	border-bottom:2px solid transparent;
+    	    	font-size: 19px;
+    	    	text-align: left;
+    	    }
+    	    .navlist li a:hover{
+    	    	border-bottom:2px solid #000;
+    	    	color:#f00;
+    	    }
+    	    .crossfadeimg,.feature,.staff,.connect,.signup,.gaurantee{
+    	    	padding:20px 0 20px 0;
+    	    }
+    	    .crossfadeimg{
+    	    	display: inline-flex;
+    	    	width:100%;
+    	    }
+    	    .cf {
+                position:relative;
+            }
+            .cf1 img{
+            	margin-left: -150px;
+            }
+            .cf2 img{
+            	margin-left: -350px;
+            }
+            .cf img {
+                position:absolute;
+                margin-top:50px;
+                -webkit-transition: opacity 1s ease-in-out;
+                -moz-transition: opacity 1s ease-in-out;
+                -o-transition: opacity 1s ease-in-out;
+                transition: opacity 1s ease-in-out;
+            }
+            .cf img.top:hover {
+                opacity:0;
+            }
+    	    .btn{
+               padding:10px;
+               margin:3px;
+               font-size: 15px;
+               display: block;
+    	    }
+    	    .btn button{
+    	    	padding:10px;
+    	    }
+    	    .btn button hr{
+    	    	border:2px solid #000;
+    	    }
+    	    .feature{
+    	    	margin:0 0 0 5%;
+    	    	width:90%;
+    	    	border-left: 2px solid #000;
+    	    	border-right: 2px solid #000;
+    	    }
+    	    .feature article,.staff article{
+    	    	display: inline-flex;
+    	    	width:200px;
+    	    	margin:10px;
+    	    }
+    	    .pic img{
+    	    	width:200px;
+    	    	height:200px;
+    	    }
+    	    .pic a{
+    	    	background: rgba(255,255,255,0.6);
+    	    	padding:5px;
+    	    }
+    	    .staff{
+    	    	background: url("img1.jpg") center/cover fixed;*/
+    	    	padding: 30px;
+    	    }
+    	    .staff article{
+    	    	margin-top:60px;
+    	    }
+    	    .last{
+    	    	text-align: left;
+    	    }
+    	    .connect{
+    	       margin-left:0;
+    	       width:25%;
+    	       padding-left:3%;
+    	    }
+    	    .signup{
+    	    	margin-right: 0;
+    	    	width:35%;
+    	       padding-left:3%;
+    	       margin-top:-10%;
+    	    }
+    	    .signup input{
+    	    	font-size: 20px;
+    	    	border-radius: 4px;
+    	    }
+    	    .gaurantee{
+    	    	background: rgba(100,100,100,0.3);
+    	    	text-align: center;
+    	    }
+    	    .connect button,.signup button{
+               padding:5px;
+               border-radius: 5px;
+               font-weight: bold;
+    	    }
+    	    footer{
+    	    	background: #000;
+    	    	color:#fff;
+    	    	padding:10px;
+    	    }
+    	    /*tablet screen*/
+    	    @media screen and (max-width: 960px){
+                .connect,.signup{
+                    width:40%; 
+                  }
+                .cf1 img,.cf2 img{
+                    width:300px;
+                    height:320px;
+                    margin:40px 0 0 -75px;
+                }
+                .cf2 img{
+                    margin-left:-230px;
+                }
+                .btn{
+                    font-size: 10px;
+                }
+                .btn button{
+                    padding:5px;
+                } 	
+    	    }
+
+            /*phone screen*/
+            @media screen and (max-width: 400px){
+                 .cf1 img,.cf2 img{
+                    width:120px;
+                    height:360px;
+                    margin:30px 0 0 -35px;
+                }
+                .cf2 img{
+                    margin-left:-90px;
+                }
+                .btn h3{
+                    font-size: 14px;
+                }
+                .btn p{
+                    font-size: 10px;
+                }
+                .btn button{
+                    padding:3px;
+                }   
+                 .srow{
+                    text-align: center;
+                 }
+                .connect{
+                    margin-left:0;
+                    width:100%; 
+                }
+                .signup{
+                    width:100%;
+                }
+                .feature{
+                    margin:0;
+                    width:90%;
+            }
+            .feature article,.staff article{
+                display: inline-flex;
+                width:170px;
+            }
+            }
+        </style>
+    </head>
+
+    <body>
+    	<header class="navbar">
+    		<div class="name">
+    		    <img src="img2.jpg" alt="" id="logo">
+    		    <h3>printing company</h3>	
+    		    <div class="navbar-list">
+                    <ul class="navlist">
+                	    <li><a href="">All products</a></li>
+                	    <li><a href="">Visiting Cards</a></li>
+                	    <li><a href="">Stationery</a></li>
+                	    <li><a href="">Printed Apparels</a></li>
+                	    <li><a href="">Marketing Materials</a></li>
+                	    <li><a href="">Embroidered Apparels</a></li>
+                	    <li><a href="">Photo Gifts</a></li>
+                	    <li><a href="">Calenders</a></li>
+                    </ul>
+    		    </div>
+    	    </div>
+    	</header>
+
+    	<main class="crossfadeimg">
+    		<div class="cf cf1">
+    			<img class="bottom" src="img3.jpg" alt=""/>
+    			<img class="top"  src="img4.jpg" alt=""/>
+    		</div>
+
+            <div class="buttons">
+    	        <section class="btn">
+    	    	    <button>
+    	    	        <small>
+    	    		        <h3>Small heading</h3>
+    	    		        <hr>
+    	    		        <p>some description of button</p>
+    	    	        </small>
+    	            </button>
+    	        </section>
+
+    	        <section class="btn">
+    	    	    <button>
+    	    	        <small>
+    	    		        <h3>Small heading</h3>
+    	    		        <hr>
+    	    		        <p>some description of button</p>
+    	    	        </small>
+    	            </button>
+    	        </section>
+
+    	        <section class="btn">
+    	    	    <button>
+    	    	        <small>
+    	    		        <h3>Small heading</h3>
+    	    		        <hr>
+    	    		        <p>some description of button</p>
+    	    	        </small>
+    	            </button>
+    	        </section>
+            </div>
+
+            <div class="cf cf2">
+    			<img class="bottom" src="img5.jpg" alt=""/>
+    			<img  class="top" src="img6.jpg" alt=""/>
+    		</div>
+        </main>
+
+        <div class="feature">
+        	<h1>FEATURED PRODUCTS</h1>
+    	    <article>
+    	    	<div class="pic"> 
+    	    	    <img src="img7.jpg" alt=""/>
+    	    	    <a href="">Product</a>
+    	    	</div>
+    	    </article>
+    	    <article>
+    	    	<div class="pic"> 
+    	    	    <img src="img8.jpg" alt=""/>
+    	    	    <a href="">Product</a>
+    	    	</div>
+    	    </article>
+    	    <article>
+    	    	<div class="pic"> 
+    	    	    <img src="img7.jpg" alt=""/>
+    	    	    <a href="">Product</a>
+    	    	</div>
+    	    </article>
+    	    <article>
+    	    	<div class="pic"> 
+    	    	    <img src="img8.jpg" alt=""/>
+    	    	    <a href="">Product</a>
+    	    	</div>
+    	    </article>
+    	    <article>
+    	    	<div class="pic"> 
+    	    	    <img src="img7.jpg" alt=""/>
+    	    	    <a href="">Product</a>
+    	    	</div>
+    	    </article>
+    	    <article>
+    	    	<div class="pic"> 
+    	    	    <img src="img8.jpg" alt=""/>
+    	    	    <a href="">Product</a>
+    	    	</div>
+    	    </article>
+    	    <article>
+    	    	<div class="pic"> 
+    	    	    <img src="img7.jpg" alt=""/>
+    	    	    <a href="">Product</a>
+    	    	</div>
+    	    </article>
+    	</div>
+
+    	<div class="staff">
+    		<h1 style="background: rgba(255,255,255,0.6); padding:10px">CUSTOMIZE WITH CONFIDENCE</h1>
+    		<h3 style="background: rgba(255,255,255,0.2);">011-1212-1212</h3>
+
+    		<article>
+    		  <div class="pic">
+    			<img src="img9.jpg" alt=""/>
+                <a href="">Name of Person</a>
+              </div>
+            </article>
+            <article>
+    		  <div class="pic">
+    			<img src="img9.jpg" alt=""/>
+                <a href="">Name of Person</a>
+              </div>
+            </article>
+            <article>
+    		  <div class="pic">
+    			<img src="img9.jpg" alt=""/>
+                <a href="">Name of Person</a>
+              </div>
+            </article>
+            <article>
+    		  <div class="pic">
+    			<img src="img9.jpg" alt=""/>
+                <a href="">Name of Person</a>
+              </div>
+            </article>
+            <article>
+    		  <div class="pic">
+    			<img src="img9.jpg" alt=""/>
+                <a href="">Name of Person</a>
+              </div>
+            </article>
+    		
+    	</div>
+
+    	<div class="last">
+    		<div class="srow">
+    		<div class="connect">
+    			<h3>Connect With Us</h3>
+    			<button>facebook</button>
+    			<button>twitter</button>
+    			<button>instagram</button>
+    		</div>
+    		<div class="signup">
+    			<h3>Sign Up for savings</h3>
+    			<form>
+    				<input type="text" placeholder="Email"/>
+    				<button type="submit">Submit</button>
+    			</form>
+    		</div>
+    	</div>
+    		<div class="gaurantee">
+    			<h3>Rely on Printing Company</h3>
+    			<p>some info about gaurantee</p>
+    		</div>
+    	</div>
+
+    	<footer>
+    		<h4>Developed By Sheena Mattu</h4>
+    	</footer>
+    </body>
+</html>
