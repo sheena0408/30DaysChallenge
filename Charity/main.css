@@ -6,6 +6,9 @@
     margin:0 auto;
 }
 */
+body{
+	overflow-x: hidden;
+}
 a,a:hover{
 	text-decoration: none;
 	color:#fff;
@@ -13,7 +16,7 @@ a,a:hover{
 .row{
 	max-width:100vw;
 }
-.main-header,.page2,.page3{
+.main-header,#page2,#page3,#page4,#page5{
 	min-height: 100vh;
 	max-width:100vw;
 	overflow-x:hidden;
@@ -85,7 +88,7 @@ a,a:hover{
     -webkit-transform: scale(1.01);
 }
 .picture{
-	background: url("https://cdn.pixabay.com/photo/2013/02/09/07/17/haiti-79641_960_720.jpg") fixed;
+	background: url("img1.jpg") fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	height:40vh;
@@ -142,11 +145,13 @@ ul{
 footer{
     background: rgba(0,0,20,0.9);
     color:#fff;
+    padding: 20px;
+    margin-top: 30px;
 }
 .myname{
 	background: #000;
 	text-align: center;
 	color: #fff;
-	padding:10px;
+	padding:5px;
 }
             
